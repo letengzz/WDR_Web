@@ -29,9 +29,11 @@
 
 ![image-20240206175548048](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/imgimage-20240206175548048.png)
 
+环境配置：打开Mac 终端，配置全局环境变量，键盘输入 `vim .bash_profile`进入编辑状态，打开之后添加一行代码：`PATH=$PATH:/usr/local/bin/`。点击 esc 退出编辑状态，此时无法对内容进行修改。键盘输入 `:wq!` 强制保存并退出vim，回到终端的界面
+
 ## 验证安装成功
 
-打开Mac 终端，键盘输入 `node -v`验证安装成功：
+在Mac 终端，键盘输入 `node -v`验证安装成功：
 
 ```bash
 node -v
