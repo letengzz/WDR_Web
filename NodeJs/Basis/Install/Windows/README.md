@@ -35,6 +35,54 @@
 
 ![image-20231003175041766](https://cdn.jsdelivr.net/gh/letengzz/tc2@main/img/Java/202310031750100.png)
 
+配置依赖库 (`node_global`)：
+
+- 创建node_global目录：
+
+  ![image-20240507134716318](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202405071347227.png)
+
+- 设置依赖库：
+
+  ```shell
+  npm config set prefix "D:\ProGram\nodejs\node_global"
+  ```
+
+  ![image-20240507134811833](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202405071348208.png)
+
+- 查看设置成功：
+
+  ```shell
+  npm config get prefix
+  ```
+
+  ![image-20240507134824849](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202405071348657.png)
+
+- 设置环境变量：
+
+  ![image-20240507135338168](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202405071353541.png)
+
+配置缓存 (`node_cache`)：
+
+- 创建node_cache目录：
+
+  ![image-20240507134929846](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202405071349320.png)
+
+- 设置依赖库：
+
+  ```shell
+  npm config set cache "D:\ProGram\nodejs\node_cache"
+  ```
+
+  ![image-20240507135116077](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202405071351160.png)
+
+- 查看设置成功：
+
+  ```shell
+  npm config get cache
+  ```
+
+  ![image-20240507135133580](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202405071351017.png)
+
 ## 验证安装成功
 
 Win+R 输入cmd，在cmd中输入 `node -v`
