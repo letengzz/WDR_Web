@@ -24,7 +24,6 @@
    
       - 内存减少`54%`。
    
-
 2. **源码的升级**：
 
    - 使用`Proxy`代替`defineProperty`实现响应式。
@@ -32,12 +31,13 @@
    
       - 重写虚拟`DOM`的实现和`Tree-Shaking`。
    
-
 3. `Vue3`可以更好的支持`TypeScript`。
 
 4. **新的特性**：
 
    - `Composition API`（组合`API`）：`setup`、`ref`与`reactive`、`computed`与`watch`......
+
+   - 键盘事件不再支持keyCode。例如：`v-on:keyup.enter`支持，`v-on:keyup.13`不支持
 
    - 新的内置组件：`Fragment`、`Teleport`、`Suspense`......
 
