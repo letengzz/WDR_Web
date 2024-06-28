@@ -2,9 +2,24 @@
 
 Vite 是快速构建前端的脚手架
 
-**官方网站**：https://cn.vitejs.dev
+`Vite` 是新一代前端构建工具。具有统一的工程化规范：目录结构、代码规范、git提交规范 等
+、自动化构建和部署：前端脚手架可以自动进行代码打包、压缩、合并、编译等常见的构建工作，可以通过集成自动化部署脚本，自动将代码部署到测试、生产环境等。
 
-## 安装
+**官网地址**：https://vitejs.cn
+
+**官方文档**：https://cn.vitejs.dev
+
+`vite`的优势：
+
+- 轻量快速的热重载（`HMR`），能实现极速的服务启动。
+- 对 `TypeScript`、`JSX`、`CSS` 等支持开箱即用。
+- 真正的按需编译，不再等待整个应用编译完成。
+
+`webpack`构建 与 `vite`构建对比：
+
+<img src="https://cdn.jsdelivr.net/gh/letengzz/tc2/img202406281311737.png" alt="1683167182037-71c78210-8217-4e7d-9a83-e463035efbbe" style="zoom:20%;box-shadow:0 0 10px black" />    <img src="https://cdn.jsdelivr.net/gh/letengzz/tc2/img202406281311028.png" alt="1683167204081-582dc237-72bc-499e-9589-2cdfd452e62f" style="zoom:20%;box-shadow:0 0 10px black" />    
+
+## 创建项目
 
 `npm create vite@latest` 用于使用npm 包管理器创建一个vite项目
 
@@ -37,6 +52,31 @@ npm create vite&latest
 访问：http://localhost:5173/
 
 ![image-20240602180353884](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202406021803469.png)
+
+## 安装依赖
+
+```shell
+npm install #安装项目所有依赖
+
+npm install axios #安装指定依赖到当前项目
+npm install -g xxx # 全局安装
+```
+
+## 项目启动
+
+```shell
+npm run dev #启动项目
+```
+
+## 项目打包
+
+```shell
+npm run build #构建后 生成 dist 文件夹
+```
+
+## 项目部署
+
+把 dist 文件夹内容部署到如 nginx 之类的服务器上。
 
 ## 更改配置
 
@@ -158,7 +198,7 @@ export default defineConfig({
 {
   "compilerOptions": {
 	...
-  
+
     "baseUrl": ".",
     "paths": {
       "@/*":[
