@@ -26,10 +26,10 @@
    
 2. **源码的升级**：
 
-   - 使用`Proxy`代替`defineProperty`实现响应式。
+   - 响应式使用`Proxy`代替`Object.defineProperty`实现响应式。
    
    
-      - 重写虚拟`DOM`的实现和`Tree-Shaking`。
+      - 重写虚拟`DOM`的实现和`Tree-Shaking` (ES6推出了tree shaking机制，tree shaking 就是在项目中引入其他模块时，会自动将用不到的代码，或者永远不会执行的代码摇掉)。
    
 3. `Vue3`可以更好的支持`TypeScript`。
 
@@ -37,18 +37,24 @@
 
    - `Composition API`（组合`API`）：`setup`、`ref`与`reactive`、`computed`与`watch`......
 
+     ![image-20240602205936661](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202406022059285.png)
+
    - 键盘事件不再支持keyCode。例如：`v-on:keyup.enter`支持，`v-on:keyup.13`不支持
 
    - 新的内置组件：`Fragment`、`Teleport`、`Suspense`......
+
+     ![image-20240602205347515](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202406022053537.png)
 
 5. 其他改变：
 
    - 新的生命周期钩子
 
+     ![image-20240602205320099](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202406022053400.png)
+
    - `data` 选项应始终被声明为一个函数
 
-   - 移除`keyCode`支持作为` v-on` 的修饰符
-
+   - 移除`keyCode`支持作为` v-on` 的修饰符 (例如：v-on:keyup.enter支持，v-on:keyup.13不支持)
+   
      ......
 
 
