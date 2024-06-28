@@ -2,7 +2,7 @@
 
 路由(Route)是一组key-value的对应关系。多个路由，需要经过路由器(Router)的管理
 
-在单页面(SPA，single page web application)应用中，点击导航区不同的导航项就会在展示区展示不同的内容
+在单页面(SPA，`single page web application`)应用中，点击导航区不同的导航项就会在展示区展示不同的内容
 
 整个过程中，页面是不抖动的，没有进行页面的跳转。
 
