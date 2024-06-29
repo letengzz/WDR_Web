@@ -383,6 +383,8 @@ let {sum,school,bigSum,upperSchool} = storeToRefs(countStore)
 
 ## $subscribe
 
+在 Pinia 中，每个创建的 store 实例都可以使用 `$subscribe` 方法来订阅状态的变化。这个方法接受一个回调函数作为参数，当 store 的状态发生变化时，这个回调函数会被调用。
+
 ```ts
 //mutate 本次修改的信息 state真正的数据
 talkStore.$subscribe((mutate,state)=>{
