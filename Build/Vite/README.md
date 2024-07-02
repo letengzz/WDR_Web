@@ -17,7 +17,13 @@ Vite 是快速构建前端的脚手架
 
 `webpack`构建 与 `vite`构建对比：
 
-<img src="https://cdn.jsdelivr.net/gh/letengzz/tc2/img202406281311737.png" alt="1683167182037-71c78210-8217-4e7d-9a83-e463035efbbe" style="zoom:20%;box-shadow:0 0 10px black" />    <img src="https://cdn.jsdelivr.net/gh/letengzz/tc2/img202406281311028.png" alt="1683167204081-582dc237-72bc-499e-9589-2cdfd452e62f" style="zoom:20%;box-shadow:0 0 10px black" />    
+- webpack构建过程：从入口进来，先分析路由再分析模块，分析之后在进行处理，之后服务启动。路由过多，模块过多时，耗时较长
+
+  ![1683167182037-71c78210-8217-4e7d-9a83-e463035efbbe](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202401302251023.png)
+
+- vite构建过程：首先服务启动，请求进入入口时，进入对应的路由，之后处理模块来返回。没有访问的路由就不会处理
+
+  ![1683167204081-582dc237-72bc-499e-9589-2cdfd452e62f](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202401302251113.png)    
 
 ## 创建项目
 
