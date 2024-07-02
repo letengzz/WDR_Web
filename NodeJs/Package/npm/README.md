@@ -96,11 +96,11 @@ npm search 关键字
 **基本格式**：
 
 ```shell
-npm install <包名>
+npm install <包名>[@版本号]
 ```
 
 ```shell
-npm i <包名>
+npm i <包名>[@版本号]
 ```
 
 **例**：
@@ -281,6 +281,12 @@ npm remove -g nodemon
 
 ```shell
 npm r -g nodemon
+```
+
+## 卸载包
+
+```shell
+npm uninstall 包名
 ```
 
 ## 配置命令别名
