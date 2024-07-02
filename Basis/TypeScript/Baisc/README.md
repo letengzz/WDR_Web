@@ -22,6 +22,25 @@ function fn(参数: 类型, 参数: 类型): 类型{
 
 TypeScript拥有自动的类型判断机制。当对变量的声明和赋值是同时进行的，TypeScript编译器会自动判断变量的类型。所以如果变量的声明和赋值时同时进行的，可以省略掉类型声明。
 
+```typescript
+//变量a只能存储字符串
+let a:string
+a = 'hello'
+a = 100 //警告：不能将类型“number”分配给类型“string”
+```
+
+```typescript
+let n = 56
+n.toFixed(2)
+/*
+当执行n.toFixed(2) ，底层做了这几件事：
+ 1.let temp = new Number(42)
+ 2.value = temp.toFixed(2)
+ 3.删除value
+ 4.返回value
+*/
+```
+
 ## 类型断言
 
 有些情况下，变量的类型是很明确，但是TS编译器却并不清楚，此时，可以通过类型断言来告诉编译器变量的类型。

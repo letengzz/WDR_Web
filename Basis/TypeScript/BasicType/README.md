@@ -1,19 +1,16 @@
 # TypeScript 基本类型
 
-|  类型   |       例子        |              描述              |
-| :-----: | :---------------: | :----------------------------: |
-| number  |    1, -33, 2.5    |            任意数字            |
-| string  | 'hi', "hi", `hi`  |           任意字符串           |
-| boolean |    true、false    |       布尔值true或false        |
-| 字面量  |      其本身       |  限制变量的值就是该字面量的值  |
-|   any   |         *         |            任意类型            |
-| unknown |         *         |         类型安全的any          |
-|  void   | 空值（undefined） |     没有值（或undefined）      |
-|  never  |      没有值       |          不能是任何值          |
-| object  |  {name:'孙悟空'}  |          任意的JS对象          |
-|  array  |      [1,2,3]      |           任意JS数组           |
-|  tuple  |       [4,5]       | 元素，TS新增类型，固定长度数组 |
-|  enum   |    enum{A, B}     |       枚举，TS中新增类型       |
+JavaScript 中的数据类型：string 、 number 、 boolean 、 null 、 undefined 、 bigint 、 symbol 、 object(包括：Array、Function、Date...)
+
+TypeScript 中的数据类型：
+
+1. JavaScript 所有数据类型
+2. 四个新类型：void、never、unknown、 any、 enum、tuple
+3. 自定义类型：type、 interface
+
+TypeScript中的三个构造函数： Number 、 String 、 Boolean ，他们只用于包装对象，正常开发时，很少去使用他们。
+
+![image-20240128233155908](https://cdn.jsdelivr.net/gh/letengzz/tc2/img202401282332924.png)
 
 - number
 
