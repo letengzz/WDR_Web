@@ -8,11 +8,7 @@ vue-admin-template是基于vue-element-admin的一套后台管理系统基础模
 
 **安装**：
 
-```shel
-#修改项目名称 vue-admin-template 改为 guigu-auth-ui
-# 解压压缩包
-# 进入目录
-cd guigu-auth-ui
+```shell
 # 安装依赖
 npm install
 # 启动。执行后，浏览器自动弹出并访问http://localhost:9528/
