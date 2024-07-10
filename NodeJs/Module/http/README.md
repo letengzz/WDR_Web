@@ -205,7 +205,23 @@ response.end();
 response.end('xxx');
 ```
 
-**例**：搭建 HTTP 服务，响应一个 4 行 3 列的表格，并且要求表格有隔行换色效果，且点击单元格能高亮显示
+**例**：
+
+```js
+const http = require('http')
+http.createServer(function (request, response) {
+    // 发送 HTTP 头部 
+    // HTTP 状态值: 200 : OK
+    // 内容类型: text/plain
+    response.writeHead(200, {'Content-Type': 'text/plain'})
+    // 发送响应数据 "Hello World"
+    response.end('Hello Server')
+}).listen(8888)
+// 终端打印如下信息
+console.log('Server running at http://127.0.0.1:8888/')
+```
+
+搭建 HTTP 服务，响应一个 4 行 3 列的表格，并且要求表格有隔行换色效果，且点击单元格能高亮显示
 
 ```js
 //导入 http 模块
