@@ -98,7 +98,7 @@ let x: string
 x = a //警告：不能将类型“unknown”分配给类型“string”
 ```
 
-unknown 会强制开发者在使⽤之前进行类型检查，从而提供更强的类型安全性：
+unknown 会强制开发者在使用之前进行类型检查，从而提供更强的类型安全性：
 
 ```typescript
 // 设置a的类型为unknown
@@ -383,7 +383,7 @@ console.log(Direction.Up); // 输出: 6
 console.log(Direction.Down); // 输出: 7
 ```
 
-使⽤数字枚举完成刚才 walk 函数中的逻辑： 代码更加直观易读，⽽且类型安全，同时也更易于维护。
+使用数字枚举完成刚才 walk 函数中的逻辑： 代码更加直观易读，而且类型安全，同时也更易于维护。
 
 ```typescript
 enum Direction {
@@ -426,9 +426,9 @@ console.log(dir); // 输出: "up"
 
 ### 常量枚举
 
-常量枚举是⼀种特殊枚举类型，它使⽤ const 关键字定义，在编译时会被 内联，避免⽣成⼀些额外的代码。
+常量枚举是⼀种特殊枚举类型，它使用 const 关键字定义，在编译时会被 内联，避免生成⼀些额外的代码。
 
-编译时内联？ 所谓“内联”其实就是 TypeScript 在编译时，会将枚举成员引⽤替换为它们的实际值， ⽽不是⽣成额外的枚举对象。这可以减少⽣成的 JavaScript 代码量，并提⾼运⾏时性 能。
+编译时内联？ 所谓“内联”其实就是 TypeScript 在编译时，会将枚举成员引用替换为它们的实际值， 而不是生成额外的枚举对象。这可以减少生成的 JavaScript 代码量，并提高运行时性能。
 
 使⽤普通枚举的 TypeScript 代码如下：
 
@@ -442,7 +442,7 @@ enum Directions {
 let x = Directions.Up;
 ```
 
-编译后⽣成的 JavaScript 代码量较⼤ ：
+编译后⽣成的 JavaScript 代码量较大 ：
 
 ```typescript
 "use strict";
